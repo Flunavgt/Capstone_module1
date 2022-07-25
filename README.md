@@ -24,19 +24,8 @@
 **This is a Website for a Profesional Audio and Video design Summit, on which new technologies interconect mass media production systems like Speakers, large display's seatting setings for large concerts, public events, or conferences**
 
 
-To get a local copy up and runn
+To get a local copy up and running.
 
-### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
 
 
 
@@ -44,9 +33,13 @@ To get a local copy up and runn
 
 👤 **Federico Luna V.**
 
-- GitHub: [@githubhandle](https://github.com/flunavgt)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@Flunavgt](https://github.com/flunavgt)
+- Twitter: [@flunavgt](https://twitter.com/flunavgt)
+- LinkedIn: [federico_luna-Gt](https://linkedin.com/in/federico-luna-Gt)
+
+## Ackowledgments
+
+  * To [Cindy Shin](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015), Original design.
 
 
 
