@@ -1,28 +1,30 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
-
-> Description the project.
+# Sistems Design Fundamentals Summit (Capstone1)
+> Capstone project Module 1
 
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- HTML & CSS
+- SASS
+- JavaScript.
 
-## Live Demo (if available)
+## Live Demo 
+
+[Live Demo Link](https://livedemo.com)
+
+## Loom Video 
 
 [Live Demo Link](https://livedemo.com)
 
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+**This is a Website for a Profesional Audio and Video design Summit, on which new technologies interconect mass media production systems like Speakers, large display's seatting setings for large concerts, public events, or conferences**
 
 
-To get a local copy up and running follow these simple example steps.
+To get a local copy up and runn
 
 ### Prerequisites
 
@@ -40,33 +42,18 @@ To get a local copy up and running follow these simple example steps.
 
 ## Authors
 
-👤 **Author1**
+👤 **Federico Luna V.**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
+- GitHub: [@githubhandle](https://github.com/flunavgt)
 - Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
-👤 **Author2**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page](../../issues/).
 
 ## Show your support
 
 Give a ⭐️ if you like this project!
 
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
 
 ## 📝 License
 
