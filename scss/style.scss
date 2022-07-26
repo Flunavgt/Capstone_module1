@@ -1,14 +1,21 @@
 $back-color: #f5f1f1;
 $primary-font-color: #ec5242;
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*img {
+  width: 10%;
+}
 
 body {
   font-family: 'Lato', sans-serif;
   background-color: $back-color;
-  padding: 0;
   height: 100vh;
-  width: 100vh;
-  margin-left: 2rem;
+  width: 100vw;
+  //margin-left: 2rem;
 }
 
 h2 {
@@ -22,8 +29,7 @@ h2 {
 
 .fadedPic {
   height: 12rem;
- display: flex; 
-  border: solid;
+ display: flex;
   align-items: flex-end;
   background-attachment: fixed;
     background-image: url(../pictures/Background.jpeg);
@@ -31,8 +37,8 @@ h2 {
     position: absolute;
     left: 0;
     top: 0;
-    width: 100vh;
-    height: 10%;
+    width: 100vw;
+    height: 15%;
     z-index: 1;
     background-color: hsla(0,0%,100%,0.70);
     background-blend-mode: overlay;
@@ -48,22 +54,24 @@ h1 {
   width: 400px;
 }
 
-.desktop_greet {
-  display: block;
-  z-index: 2;
-  margin-bottom: 0;
-}
+// .desktop_greet {
+//   display: block;
+//   z-index: 2;
+//   margin-bottom: 0;
+
+// }
 
 .mobile_greet {
   margin-top: 90px;
+  display: block;
 }
 
 .description {
-  position: relative;
   border: 2px solid white;
   padding: 0;
   margin-bottom: 10px;
-  width: auto;
+  width: 90%;
+  margin: 2rem;
 }
 
 .description p {
@@ -75,19 +83,181 @@ font-size: 1.75rem;
   color: rgb(86, 83, 83);
   font-size: 2rem;
   padding: 0;
-  margin: 0;
+  margin: 2rem;
 }
 
 .placeAndDate h3 {
   color: rgb(164, 162, 162);
+  margin: 2rem;
 }
 
 .mainProgram {
+  display: flex;
+  flex-direction: column;
   background-color: #272a31;
   margin: 0;
   width: 100%;
+  background-image: url(../pictures/hitmark.png);
+  background-size: 35px;
+}
+
+.mainProgram h2 {
+  color: white;
+  text-align: center;
+  padding: 50px 0 30px 0;
+  height: 50px;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.mainProgram h2::after {
+  content: '';
+    width: 10%;
+    position: absolute;
+    left: 45%;
+    color: #ec5242;
+    bottom: 20px;
+    border-width: 0 0px 1px;
+    border-style:solid ;
+    
 }
 
 .navMenu {
   display: none;
+}
+
+.activity {
+  display: grid;
+  grid-template-columns: 20% 25% 40%;
+  flex-wrap: wrap;
+  background-color: #71747649;
+  height: 100px;
+  width: 90%;
+  margin: 0 auto;
+  align-items: center;
+  margin-top: 13px;
+}
+
+.activity i {
+  color: #f5f1f1;
+  font-size: 2rem;
+  
+}
+
+.activity h3 {
+  color: $primary-font-color;
+  font-size: 1rem;
+  
+}
+
+.iconsmain {
+  text-align: center;
+  align-items: center;
+}
+
+.activity i:hover {
+  color: $primary-font-color;
+  cursor: pointer;
+}
+
+.activity p {
+  color: #f5f1f1;
+}
+
+.enroll {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0 50px 0;
+}
+
+.mainProgram button {
+  width: 75%;
+  text-align: center;
+  background-color: #e43c29;
+  font-family: 'lato', sans-serif;
+  font-size: 1.5rem;
+  color: #dad7d7;
+  padding: 30px;
+  border: none;
+}
+
+.partner_container {
+  background-color: #272a31;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 10px; 
+}
+
+.partnerTitle {
+  background-color: #272a31;
+}
+.partnerTitle h2 {
+  color: white;
+  text-align: center;
+  padding: 10px 0 10px 0;
+  height: 50px;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.partnerTitle h2::after {
+  content: '';
+    width: 10%;
+    position: absolute;
+    left: 45%;
+    color: #ec5242;
+    bottom: 20px;
+    border-width: 0 0px 1px;
+    border-style:solid ;
+    
+}
+
+
+.partner_container img {
+  width: 20%;
+  padding: 1.5rem;
+  flex: 1 0 20%;
+}
+
+.company {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  height: fit-content;
+  padding: 30px;
+}
+
+.logoBottom {
+  width: 50vw;
+  text-align: center;
+}
+
+.logoBottom img {
+  width: 50%;
+}
+
+
+
+.speakerTitle h2 {
+  color: rgb(7, 7, 7);
+  text-align: center;
+  padding: 10px 0 10px 0;
+  height: 50px;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.speakerTitle h2::after {
+  content: '';
+    width: 10%;
+    position: absolute;
+    left: 45%;
+    color: #ec5242;
+    bottom: 20px;
+    border-width: 0 0px 1px;
+    border-style:solid ;
+    
 }
