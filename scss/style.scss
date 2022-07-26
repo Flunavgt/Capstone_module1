@@ -5,6 +5,89 @@ $primary-font-color: #ec5242;
 body {
   font-family: 'Lato', sans-serif;
   background-color: $back-color;
+  padding: 0;
+  height: 100vh;
+  width: 100vh;
+  margin-left: 2rem;
 }
 
+h2 {
+  font-family: 'lato', sans-serif;
+  font-size: 2.5rem;
+  color: $primary-font-color;
+  margin-top: 0;
+  z-index: 2;
+  position: relative;
+}
 
+.fadedPic {
+  height: 12rem;
+ display: flex; 
+  border: solid;
+  align-items: flex-end;
+  background-attachment: fixed;
+    background-image: url(../pictures/Background.jpeg);
+    background-size: contain;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vh;
+    height: 10%;
+    z-index: 1;
+    background-color: hsla(0,0%,100%,0.70);
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    //background-position-y: center;
+}
+
+h1 {
+  font-family: 'COCOGOOSE', sans-serif;
+  font-size: 2rem;
+  color: $primary-font-color;
+  margin: 35px 0 50px 0;
+  width: 400px;
+}
+
+.desktop_greet {
+  display: block;
+  z-index: 2;
+  margin-bottom: 0;
+}
+
+.mobile_greet {
+  margin-top: 90px;
+}
+
+.description {
+  position: relative;
+  border: 2px solid white;
+  padding: 0;
+  margin-bottom: 10px;
+  width: auto;
+}
+
+.description p {
+margin: 0 5%;
+font-size: 1.75rem;
+}
+
+.placeAndDate h2 {
+  color: rgb(86, 83, 83);
+  font-size: 2rem;
+  padding: 0;
+  margin: 0;
+}
+
+.placeAndDate h3 {
+  color: rgb(164, 162, 162);
+}
+
+.mainProgram {
+  background-color: #272a31;
+  margin: 0;
+  width: 100%;
+}
+
+.navMenu {
+  display: none;
+}
