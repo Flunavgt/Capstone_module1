@@ -2,7 +2,7 @@ $back-color: #f5f1f1;
 $primary-font-color: #ec5242;
 $maska: #272727;
 @mixin transition-ease {
-  transition: all 0.5s ease-in-out;  
+  transition: all 0.5s ease-in-out;
 }
 
 * {
@@ -26,7 +26,6 @@ a {
   width: 28px;
   cursor: pointer;
   @include transition-ease();
-  
 }
 
 .menu-btn__burger {
@@ -41,7 +40,7 @@ a {
 }
 
 .menu-btn__burger::before {
-  content: '';
+  content: "";
   position: absolute;
   top: -8px;
   width: 28px;
@@ -51,10 +50,8 @@ a {
   transition: all 0.5s ease-in-out;
 }
 
-
-
 .menu-btn__burger::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 8px;
   width: 20px;
@@ -66,25 +63,21 @@ a {
 
 .menu-btn__burger.open {
   -webkit-transform: rotate(720deg);
-          transform: rotate(720deg);
+  transform: rotate(720deg);
   background: transparent;
 }
 
 .menu-btn__burger.open::before {
   -webkit-transform: rotate(45deg) translate(5px, 8px);
-          transform: rotate(45deg) translate(5px, 8px);
+  transform: rotate(45deg) translate(5px, 8px);
 }
 
 .menu-btn__burger.open::after {
   width: 28px;
   -webkit-transform: rotate(-45deg) translate(3px, -7px);
-          transform: rotate(-45deg) translate(3px, -7px);
+  transform: rotate(-45deg) translate(3px, -7px);
 }
-// .hamburger {
-//   display: block;
-//   cursor: pointer;
-//   margin-right: 2rem;
-// }
+
 .nav {
   position: fixed;
   top: 0;
@@ -104,47 +97,47 @@ a {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   height: 100vh;
   overflow: hidden;
   background: #272727;
   list-style-type: none;
   padding-right: 1rem;
   -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
+  transform: translateY(-100%);
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
 .nav .navMenu.open {
   -webkit-transform: translateY(0);
-          transform: translateY(0);
+  transform: translateY(0);
 }
 
 .nav .Menu_item {
   -webkit-transform: translateX(100vw);
-          transform: translateX(100vw);
+  transform: translateX(100vw);
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
 .nav .Menu_item.open {
   -webkit-transform: translateX(0);
-          transform: translateX(0);
+  transform: translateX(0);
 }
 
 .nav .Menu_item > a {
   color: white;
 }
 
-.nav .navMenu_link{
+.nav .navMenu_link {
   display: inline-block;
   font-size: 2rem;
   text-transform: uppercase;
@@ -160,52 +153,23 @@ a {
 
 .Menu_item:nth-child(1) {
   -webkit-transition-delay: 0.25s;
-          transition-delay: 0.25s;
+  transition-delay: 0.25s;
 }
 
 .menu_item:nth-child(2) {
   -webkit-transition-delay: 0.35s;
-          transition-delay: 0.35s;
+  transition-delay: 0.35s;
 }
 
 .menu_item:nth-child(3) {
   -webkit-transition-delay: 0.45s;
-          transition-delay: 0.45s;
+  transition-delay: 0.45s;
 }
 
 .Menu_item:nth-child(4) {
   -webkit-transition-delay: 0.55s;
-          transition-delay: 0.55s;
+  transition-delay: 0.55s;
 }
-
-
-// .bar {
-//   display: block;
-//   width: 1.6rem;
-//   height: 0.2rem;
-//   margin: 0.3rem;
-//   -webkit-transition: all 0.3s ease-in-out;
-//   transition: all 0.3s ease-in-out;
-//   background-color: black;
-// }
-
-// .hamburger .bar:nth-child(2) {
-//   opacity: 0;
-// }
-
-// .hamburger .bar:nth-child(1) {
-//   transform: translateY(0.5rem) rotate(45deg);
-// }
-
-// .hamburger .bar:nth-child(3) {
-//   transform: translateY(-0.5rem) rotate(-45deg);
-// }
-
-// .hamburger .bar {
-//   position: fixed;
-//   top: 3%;
-//   right: 10%;
-// }
 
 .Menu_item img {
   width: 200px;
@@ -226,30 +190,25 @@ header {
   height: 10vh;
 }
 
-
-
 .background {
   padding-top: 100px;
   width: 90vw;
-  // background-image: url('/Capstone_module1/pictures/mobilebg.png');
-  // background-size: cover;
 }
 
 .general_information {
-  background-image: url('/Capstone_module1/pictures/bgmobile2.png');
+  background-image: url("/Capstone_module1/pictures/bgmobile2.png");
   background-size: contain;
 }
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   background-color: $back-color;
   height: 100vh;
   width: 100vw;
-  //margin-left: 2rem;
 }
 
 .mobile_greet {
-  font-family: 'lato', sans-serif;
+  font-family: "lato", sans-serif;
   font-size: 2rem;
   color: $primary-font-color;
   margin-left: 2rem;
@@ -262,14 +221,18 @@ body {
 }
 
 header {
-    background:linear-gradient(to right, rgb($back-color, 0.7), rgb($back-color, 0.7)),
-     url('/Capstone_module1/pictures/Background.jpeg');
-     background-size: cover;
-     background-position: center;
+  background: linear-gradient(
+      to right,
+      rgb($back-color, 0.7),
+      rgb($back-color, 0.7)
+    ),
+    url("/Capstone_module1/pictures/Background.jpeg");
+  background-size: cover;
+  background-position: center;
 }
 
 h1 {
-  font-family: 'COCOGOOSE', sans-serif;
+  font-family: "COCOGOOSE", sans-serif;
   font-size: 3rem;
   color: $primary-font-color;
   margin: 20px 0 20px 0;
@@ -277,7 +240,6 @@ h1 {
   margin-left: 2rem;
   font-weight: 800;
 }
-
 
 .description {
   border: 2px solid white;
@@ -289,8 +251,8 @@ h1 {
 }
 
 .description p {
-margin: 0 5%;
-font-size: 1.75rem;
+  margin: 0 5%;
+  font-size: 1.75rem;
 }
 
 .placeAndDate h2 {
@@ -327,20 +289,6 @@ font-size: 1.75rem;
   text-underline-offset: 1.5rem;
 }
 
-// .mainProgram h2::after {
-//   content: '';
-//     width: 10%;
-//     position: absolute;
-//     left: 45%;
-//     color: #ec5242;
-//     bottom: 20px;
-//     border-width: 1px 20px 1px;
-//     border-style:solid ;
-    
-// }
-
-
-
 .activity {
   display: grid;
   grid-template-columns: 20% 25% 40%;
@@ -356,7 +304,6 @@ font-size: 1.75rem;
 .activity i {
   color: #c4c3c3;
   font-size: 2.25rem;
-  
 }
 
 .activity h3 {
@@ -379,7 +326,7 @@ font-size: 1.75rem;
   color: #f5f1f1;
   margin-left: 15px;
   min-width: 160px;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .enroll {
@@ -392,7 +339,7 @@ font-size: 1.75rem;
   width: 75%;
   text-align: center;
   background-color: #e43c29;
-  font-family: 'lato', sans-serif;
+  font-family: "lato", sans-serif;
   font-size: 1.5rem;
   color: #dad7d7;
   padding: 30px;
@@ -409,7 +356,7 @@ font-size: 1.75rem;
   background-color: #272a31;
   display: flex;
   flex-wrap: wrap;
-  padding-top: 10px; 
+  padding-top: 10px;
 }
 
 .partnerTitle {
@@ -425,21 +372,7 @@ font-size: 1.75rem;
   font-size: 1.5rem;
   text-decoration: 1px underline $primary-font-color;
   text-underline-offset: 1.2rem;
-
 }
-
-// .partnerTitle h2::after {
-//   content: '';
-//     width: 10%;
-//     position: absolute;
-//     left: 45%;
-//     color: #ec5242;
-//     bottom: 20px;
-//     border-width: 0 0px 1px;
-//     border-style:solid ;
-    
-// }
-
 
 .partner_container img {
   width: 90px;
@@ -466,8 +399,6 @@ font-size: 1.75rem;
   width: 50%;
 }
 
-
-
 .speakerTitle h2 {
   color: rgb(7, 7, 7);
   text-align: center;
@@ -481,8 +412,6 @@ font-size: 1.75rem;
   text-decoration: 1px underline $primary-font-color;
   text-underline-offset: 1rem;
 }
-
-
 
 .Speaker-menu {
   width: 100vw;
@@ -498,7 +427,7 @@ font-size: 1.75rem;
 }
 
 .spkdesk {
-  font-family: 'lato', sans-serif;
+  font-family: "lato", sans-serif;
   font-size: 12px;
   font-style: italic;
   font-weight: lighter;
@@ -509,7 +438,7 @@ font-size: 1.75rem;
 }
 
 .speakerPic {
-  background-image: url('../pictures/chess-board-gray.png');
+  background-image: url("../pictures/chess-board-gray.png");
   background-position: top left;
   background-repeat: no-repeat;
   background-size: 5rem;
@@ -519,29 +448,27 @@ font-size: 1.75rem;
   padding: 25px 0 0 25px;
 }
 
-.spkjob  {
+.spkjob {
   color: $primary-font-color;
   font-style: italic;
   padding-bottom: 1rem;
-  // border-bottom: solid;
 }
 
 .spkjob:after {
   border-bottom: 1.5px solid rgb(203, 201, 201);
-  content: '';
+  content: "";
   display: block;
   width: 10%;
   margin-top: 12px;
 }
 
-
 .jobgenerals {
   margin-left: 20px;
-  padding-top: .5rem;
+  padding-top: 0.5rem;
 }
 
 .spk_name {
-  font-family: 'lato', sans-serif;
+  font-family: "lato", sans-serif;
   font-weight: 700;
   font-size: 1.6rem;
   padding-bottom: 0.25rem;
@@ -573,7 +500,7 @@ font-size: 1.75rem;
   .desktop_greet {
     display: block;
     color: $primary-font-color;
-    font-family: 'lato', sans-serif;
+    font-family: "lato", sans-serif;
     font-size: 2rem;
     font-weight: light;
   }
@@ -627,6 +554,4 @@ font-size: 1.75rem;
     margin-left: auto;
     margin-right: auto;
   }
-
-
 }
