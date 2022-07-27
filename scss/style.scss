@@ -488,6 +488,7 @@ font-size: 1.75rem;
   width: 100vw;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .spk_card {
@@ -620,6 +621,11 @@ font-size: 1.75rem;
 
   .spkMenuBtn {
     visibility: hidden;
+  }
+
+  .spk_card {
+    margin-left: auto;
+    margin-right: auto;
   }
 
 

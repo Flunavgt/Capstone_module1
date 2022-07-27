@@ -387,6 +387,7 @@ h1 {
   width: 100vw;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .spk_card {
@@ -510,5 +511,9 @@ h1 {
   }
   .spkMenuBtn {
     visibility: hidden;
+  }
+  .spk_card {
+    margin-left: auto;
+    margin-right: auto;
   }
 }/*# sourceMappingURL=style.css.map */
