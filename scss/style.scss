@@ -453,12 +453,12 @@ font-size: 1.75rem;
   justify-content: space-evenly;
   flex-direction: row;
   height: fit-content;
-  padding: 30px;
+  padding-top: 30px;
 }
 
 .logoBottom {
   width: 200px;
-  height: 120px;
+  height: 80px;
   text-align: center;
 }
 
@@ -612,6 +612,14 @@ font-size: 1.75rem;
   .activity p {
     text-align: center;
     margin: 0;
+  }
+
+  .hidden-cards {
+    display: flex;
+  }
+
+  .spkMenuBtn {
+    visibility: hidden;
   }
 
 

@@ -355,12 +355,12 @@ h1 {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  padding: 30px;
+  padding-top: 30px;
 }
 
 .logoBottom {
   width: 200px;
-  height: 120px;
+  height: 80px;
   text-align: center;
 }
 
@@ -504,5 +504,11 @@ h1 {
   .activity p {
     text-align: center;
     margin: 0;
+  }
+  .hidden-cards {
+    display: flex;
+  }
+  .spkMenuBtn {
+    visibility: hidden;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -73,6 +73,8 @@ const arr1 = [
   },
 ];
 
+
+
 document.querySelector('.Speaker-menu').innerHTML = arr1.map((items,i) => ` <div class="spk_card ${(i>1)&&' showcards hidden-cards'}">
 <div class="speakerPic">
   <img src="${items.skpPic}" alt="">
