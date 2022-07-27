@@ -85,6 +85,99 @@ a {
 //   cursor: pointer;
 //   margin-right: 2rem;
 // }
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  opacity: 0.98;
+  visibility: hidden;
+}
+
+.nav.open {
+  visibility: visible;
+}
+
+.nav .navMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  background: #272727;
+  list-style-type: none;
+  padding-right: 1rem;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.nav .navMenu.open {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.nav .Menu_item {
+  -webkit-transform: translateX(100vw);
+          transform: translateX(100vw);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.nav .Menu_item.open {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.nav .Menu_item > a {
+  color: white;
+}
+
+.nav .navMenu_link{
+  display: inline-block;
+  font-size: 2rem;
+  text-transform: uppercase;
+  padding: 2rem 0;
+  font-weight: 300;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.nav .navMenu_link:hover {
+  color: #ff652f;
+}
+
+.Menu_item:nth-child(1) {
+  -webkit-transition-delay: 0.25s;
+          transition-delay: 0.25s;
+}
+
+.menu_item:nth-child(2) {
+  -webkit-transition-delay: 0.35s;
+          transition-delay: 0.35s;
+}
+
+.menu_item:nth-child(3) {
+  -webkit-transition-delay: 0.45s;
+          transition-delay: 0.45s;
+}
+
+.Menu_item:nth-child(4) {
+  -webkit-transition-delay: 0.55s;
+          transition-delay: 0.55s;
+}
+
 
 // .bar {
 //   display: block;
@@ -114,10 +207,15 @@ a {
 //   right: 10%;
 // }
 
-// #hambclose:hover {
-//   cursor: pointer;
-.nav {
-  padding-top: 90px;
+.Menu_item img {
+  width: 200px;
+  height: 120px;
+}
+
+.Menu_item {
+  color: #c4c3c3;
+  font-size: 2rem;
+  padding-bottom: 2.5rem;
 }
 
 header {
@@ -125,6 +223,7 @@ header {
   z-index: 2;
   width: 100%;
   padding: 1rem;
+  height: 10vh;
 }
 
 body {
@@ -217,7 +316,7 @@ font-size: 1.75rem;
     position: absolute;
     left: 45%;
     color: #ec5242;
-    bottom: 20px;
+    bottom: 0px;
     border-width: 0 0px 1px;
     border-style:solid ;
     
