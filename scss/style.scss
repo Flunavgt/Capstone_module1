@@ -229,7 +229,15 @@ header {
 
 
 .background {
-  padding-top: 150px;
+  padding-top: 100px;
+  width: 90vw;
+  // background-image: url('/Capstone_module1/pictures/mobilebg.png');
+  // background-size: cover;
+}
+
+.general_information {
+  background-image: url('/Capstone_module1/pictures/bgmobile2.png');
+  background-size: contain;
 }
 
 body {
@@ -249,9 +257,12 @@ body {
   margin-top: 35px;
   font-weight: light;
 }
+.desktop_greet {
+  display: none;
+}
 
 header {
-    background:linear-gradient(to right, rgb($back-color, 0.5), rgb($back-color, 0.5)),
+    background:linear-gradient(to right, rgb($back-color, 0.7), rgb($back-color, 0.7)),
      url('/Capstone_module1/pictures/Background.jpeg');
      background-size: cover;
      background-position: center;
@@ -274,6 +285,7 @@ h1 {
   margin-bottom: 10px;
   width: 90%;
   margin: 2rem;
+  background-color: $back-color;
 }
 
 .description p {
@@ -311,19 +323,21 @@ font-size: 1.75rem;
   font-family: "Lato", sans-serif;
   font-weight: 500;
   font-size: 2rem;
+  text-decoration: 1px underline $primary-font-color;
+  text-underline-offset: 1.5rem;
 }
 
-.mainProgram h2::after {
-  content: '';
-    width: 10%;
-    position: absolute;
-    left: 45%;
-    color: #ec5242;
-    bottom: 0px;
-    border-width: 0 0px 1px;
-    border-style:solid ;
+// .mainProgram h2::after {
+//   content: '';
+//     width: 10%;
+//     position: absolute;
+//     left: 45%;
+//     color: #ec5242;
+//     bottom: 20px;
+//     border-width: 1px 20px 1px;
+//     border-style:solid ;
     
-}
+// }
 
 
 
@@ -409,19 +423,22 @@ font-size: 1.75rem;
   font-family: "Lato", sans-serif;
   font-weight: 700;
   font-size: 1.5rem;
+  text-decoration: 1px underline $primary-font-color;
+  text-underline-offset: 1.2rem;
+
 }
 
-.partnerTitle h2::after {
-  content: '';
-    width: 10%;
-    position: absolute;
-    left: 45%;
-    color: #ec5242;
-    bottom: 20px;
-    border-width: 0 0px 1px;
-    border-style:solid ;
+// .partnerTitle h2::after {
+//   content: '';
+//     width: 10%;
+//     position: absolute;
+//     left: 45%;
+//     color: #ec5242;
+//     bottom: 20px;
+//     border-width: 0 0px 1px;
+//     border-style:solid ;
     
-}
+// }
 
 
 .partner_container img {
@@ -440,7 +457,8 @@ font-size: 1.75rem;
 }
 
 .logoBottom {
-  width: 50vw;
+  width: 200px;
+  height: 120px;
   text-align: center;
 }
 
@@ -458,19 +476,13 @@ font-size: 1.75rem;
   font-family: "Lato", sans-serif;
   font-weight: 700;
   font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  text-decoration: 1px underline $primary-font-color;
+  text-underline-offset: 1rem;
 }
 
-.speakerTitle h2::after {
-  content: '';
-    width: 10%;
-    position: absolute;
-    left: 45%;
-    color: #ec5242;
-    bottom: 20px;
-    border-width: 0 0px 1px;
-    border-style:solid ;
-    
-}
+
 
 .Speaker-menu {
   width: 100vw;
@@ -532,4 +544,75 @@ font-size: 1.75rem;
   font-weight: 700;
   font-size: 1.6rem;
   padding-bottom: 0.25rem;
+}
+
+.hidden-cards {
+  display: none;
+}
+
+.more_btn,
+.less_btn {
+  width: 90vw;
+  border: 1px solid black;
+  padding: 1rem;
+  font-size: 1.25rem;
+}
+
+.arrow_btn {
+  color: $primary-font-color;
+}
+
+.spkMenuBtn {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .desktop_greet {
+    display: block;
+    color: $primary-font-color;
+    font-family: 'lato', sans-serif;
+    font-size: 2rem;
+    font-weight: light;
+  }
+
+  .fadedPic {
+    margin-top: 65px;
+    margin-left: 1rem;
+  }
+
+  .mobile_greet {
+    visibility: hidden;
+  }
+
+  h1 {
+    margin-top: 0;
+  }
+
+  .activities_container {
+    display: flex;
+    width: 880px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .activity {
+    display: flex;
+    flex-direction: column;
+    width: 160px;
+    height: 170px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .activity:hover {
+    border: 1px solid white;
+  }
+
+  .activity p {
+    text-align: center;
+    margin: 0;
+  }
+
+
 }

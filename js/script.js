@@ -73,7 +73,7 @@ const arr1 = [
   },
 ];
 
-document.querySelector('.Speaker-menu').innerHTML = arr1.map((items) => ` <div class="spk_card">
+document.querySelector('.Speaker-menu').innerHTML = arr1.map((items,i) => ` <div class="spk_card ${(i>1)&&' showcards hidden-cards'}">
 <div class="speakerPic">
   <img src="${items.skpPic}" alt="">
 </div>
@@ -82,4 +82,22 @@ document.querySelector('.Speaker-menu').innerHTML = arr1.map((items) => ` <div c
   <p class="spkjob">${items.spkjob}</p>
   <p class="spkdesk">${items.spkdesk}</p>
   </div>
-</div>`).join(''); 
+</div>`).join('');
+const speakersCards = document.querySelectorAll('.showcards');
+const show = document.querySelector('.more_btn');
+const less = document.querySelector('.less_btn');
+
+show.addEventListener('click',()=>{
+  speakersCards.forEach(ele=>ele.classList.toggle('hidden-cards'));
+  show.classList.toggle('hidden-cards');
+  less.classList.toggle('hidden-cards');
+})
+
+less.addEventListener('click',()=>{
+  speakersCards.forEach(ele=>ele.classList.toggle('hidden-cards'));
+  show.classList.toggle('hidden-cards');
+  less.classList.toggle('hidden-cards');
+})
+
+
+console.log(speakersCards)
