@@ -7,6 +7,76 @@
   width: 10%;
 }
 
+a {
+  text-decoration: none;
+}
+
+.menu_btn {
+  position: absolute;
+  z-index: 1;
+  left: 1rem;
+  top: 1rem;
+  height: 20px;
+  width: 28px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-btn__burger {
+  position: absolute;
+  right: 0;
+  top: 0.5rem;
+  width: 28px;
+  height: 3px;
+  background: black;
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-btn__burger::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  width: 28px;
+  height: 3px;
+  background: black;
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-btn__burger::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  width: 20px;
+  height: 3px;
+  background: black;
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-btn__burger.open {
+  transform: rotate(720deg);
+  background: transparent;
+}
+
+.menu-btn__burger.open::before {
+  transform: rotate(45deg) translate(5px, 8px);
+}
+
+.menu-btn__burger.open::after {
+  width: 28px;
+  transform: rotate(-45deg) translate(3px, -7px);
+}
+
+.nav {
+  padding-top: 90px;
+}
+
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  padding: 1rem;
+}
+
 body {
   font-family: "Lato", sans-serif;
   background-color: #f5f1f1;
@@ -14,43 +84,30 @@ body {
   width: 100vw;
 }
 
-h2 {
+.mobile_greet {
   font-family: "lato", sans-serif;
   font-size: 2.5rem;
   color: #ec5242;
-  margin-top: 0;
+  margin-left: 2rem;
   z-index: 2;
-  position: relative;
 }
 
-.fadedPic {
-  height: 12rem;
-  display: flex;
-  align-items: flex-end;
-  background-attachment: fixed;
-  background-image: url(../pictures/Background.jpeg);
-  background-size: contain;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100vw;
-  height: 15%;
-  z-index: 1;
-  background-color: hsla(0deg, 0%, 100%, 0.7);
-  background-blend-mode: overlay;
-  background-repeat: no-repeat;
+header {
+  background: linear-gradient(to right, rgba(245, 241, 241, 0.5), rgba(245, 241, 241, 0.5)), url("/Capstone_module1/pictures/Background.jpeg");
+  background-size: cover;
+  background-position: center;
 }
 
 h1 {
   font-family: "COCOGOOSE", sans-serif;
-  font-size: 2rem;
+  font-size: rem;
   color: #ec5242;
   margin: 35px 0 50px 0;
   width: 400px;
+  margin-left: 2rem;
 }
 
 .mobile_greet {
-  margin-top: 90px;
   display: block;
 }
 
@@ -86,7 +143,7 @@ h1 {
   margin: 0;
   width: 100%;
   background-image: url(../pictures/hitmark.png);
-  background-size: 35px;
+  background-size: 25px;
 }
 
 .mainProgram h2 {
@@ -110,10 +167,6 @@ h1 {
   border-style: solid;
 }
 
-.navMenu {
-  display: none;
-}
-
 .activity {
   display: grid;
   grid-template-columns: 20% 25% 40%;
@@ -127,13 +180,13 @@ h1 {
 }
 
 .activity i {
-  color: #f5f1f1;
-  font-size: 2rem;
+  color: #c4c3c3;
+  font-size: 2.25rem;
 }
 
 .activity h3 {
   color: #ec5242;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .iconsmain {
@@ -144,10 +197,14 @@ h1 {
 .activity i:hover {
   color: #ec5242;
   cursor: pointer;
+  transition: all 0.5s ease-in-out;
 }
 
 .activity p {
   color: #f5f1f1;
+  margin-left: 15px;
+  min-width: 160px;
+  font-size: 0.8rem;
 }
 
 .enroll {
@@ -165,6 +222,12 @@ h1 {
   color: #dad7d7;
   padding: 30px;
   border: none;
+}
+
+.jobdesc {
+  color: blue;
+  width: 300px;
+  margin-left: 20px;
 }
 
 .partner_container {
@@ -243,4 +306,65 @@ h1 {
   bottom: 20px;
   border-width: 0 0px 1px;
   border-style: solid;
+}
+
+.Speaker-menu {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.spk_card {
+  display: flex;
+  margin: 0 0 50px 45px;
+  width: 500px;
+}
+
+.spkdesk {
+  font-family: "lato", sans-serif;
+  font-size: 12px;
+  font-style: italic;
+  font-weight: lighter;
+}
+
+.spk_card img {
+  width: 115px;
+  height: 115px;
+}
+
+.speakerPic {
+  background-image: url("../pictures/chess-board-gray.png");
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: 5rem;
+  justify-content: right;
+  display: flex;
+  align-items: flex-end;
+  padding: 25px 0 0 25px;
+}
+
+.spkjob {
+  color: #ec5242;
+  font-style: italic;
+  padding-bottom: 1rem;
+}
+
+.spkjob:after {
+  border-bottom: 1.5px solid rgb(203, 201, 201);
+  content: "";
+  display: block;
+  width: 10%;
+  margin-top: 12px;
+}
+
+.jobgenerals {
+  margin-left: 20px;
+  padding-top: 0.5rem;
+}
+
+.spk_name {
+  font-family: "lato", sans-serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+  padding-bottom: 0.25rem;
 }/*# sourceMappingURL=style.css.map */
