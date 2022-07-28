@@ -224,8 +224,7 @@ body {
   margin-bottom: 30px;
 }
 
-
-.background .about{
+.background .about {
   color: $primary-font-color;
   text-align: center;
   margin: 0;
@@ -248,14 +247,11 @@ body {
   padding: 30px;
   margin-left: auto;
   margin-right: auto;
-  
 }
 
 .desktop_greet {
   display: none;
 }
-
-
 
 @media (max-width: 768px) {
   .bg-on {
@@ -286,7 +282,7 @@ body {
 
   .desktop-view {
     display: block;
-    .upper-bar{
+    .upper-bar {
       background-color: #323338;
       width: 100vw;
       height: 3vh;
@@ -375,7 +371,7 @@ h1 {
   margin: 2rem;
 }
 
-.general_information .about a{
+.general_information .about a {
   color: #e43c29;
   margin-left: 42vw;
   width: 100vw;
@@ -398,7 +394,7 @@ h1 {
   border-bottom: 1px solid grey;
   align-items: center;
   color: #646976;
-  font-family: 'lato', sans-serif;
+  font-family: "lato", sans-serif;
 }
 
 .companyHistory img {
@@ -414,7 +410,7 @@ h1 {
   margin: 50px 0 50px 0;
 }
 
-.past h2{
+.past h2 {
   margin-bottom: 30px;
   font-size: 2rem;
   color: #646976;
@@ -434,17 +430,11 @@ h1 {
   margin: 0 0 40px 0;
 }
 
-
-
-
-
 .past1,
 .past2 {
   position: relative;
   width: 500px;
 }
-
-
 
 .past1p,
 .past2p {
@@ -462,16 +452,16 @@ h1 {
   height: 333px;
   width: 100%;
   opacity: 0;
-  transition: .5s ease;
+  transition: 0.5s ease;
   background-color: red;
 }
 
 .past2:hover .overlay {
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .past1:hover .overlay {
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .pictext1,
@@ -487,22 +477,9 @@ h1 {
   text-align: center;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 .companyHistory h3 {
   margin-top: 30px;
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 
 .mainProgram {
