@@ -3,6 +3,9 @@
 # Sistems Design Fundamentals Summit (Capstone1)
 > Capstone project Module 1
 
+This website is for a Profesional Audio and video summit, this type of equipment is for large 
+events and concerts, which requires a lot of designing to set up the correct equipment and angles.
+
 
 ## Built With
 
@@ -16,7 +19,7 @@
 
 ## Loom Video 
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://www.loom.com/share/7a5ef9c89241452e809b352b34d858fc)
 
 
 ## Getting Started
