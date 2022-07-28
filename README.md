@@ -12,7 +12,7 @@
 
 ## Live Demo 
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://flunavgt.github.io/Capstone_module1/)
 
 ## Loom Video 
 
