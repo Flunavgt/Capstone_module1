@@ -161,6 +161,8 @@ a {
 .general_information {
   background-image: url("/Capstone_module1/pictures/bgmobile2.png");
   background-size: contain;
+  display: flex;
+  flex-direction: column;
 }
 
 body {
@@ -176,9 +178,9 @@ body {
   color: #ec5242;
   margin-left: 2rem;
   display: block;
-  margin-top: 35px;
+  margin-top: 10px;
   float: left;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .back h2 {
@@ -330,7 +332,7 @@ h1 {
   font-family: "COCOGOOSE", sans-serif;
   font-size: 3rem;
   color: #ec5242;
-  margin: 20px 0 20px 0;
+  margin: 70px 0 20px 0;
   width: 70vw;
   margin-left: 2rem;
   font-weight: 800;
