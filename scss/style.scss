@@ -1,6 +1,7 @@
 $back-color: #f5f1f1;
 $primary-font-color: #ec5242;
 $maska: #272727;
+
 @mixin transition-ease {
   transition: all 0.5s ease-in-out;
 }
@@ -13,6 +14,7 @@ $maska: #272727;
 *img {
   width: 10%;
 }
+
 a {
   text-decoration: none;
 }
@@ -25,7 +27,6 @@ a {
   height: 20px;
   width: 28px;
   cursor: pointer;
-  @include transition-ease();
 }
 
 .menu-btn__burger {
@@ -76,6 +77,37 @@ a {
   width: 28px;
   -webkit-transform: rotate(-45deg) translate(3px, -7px);
   transform: rotate(-45deg) translate(3px, -7px);
+}
+
+.Menu_item:nth-child(1) {
+  -webkit-transition-delay: 0.25s;
+  transition-delay: 0.25s;
+}
+
+.menu_item:nth-child(2) {
+  -webkit-transition-delay: 0.35s;
+  transition-delay: 0.35s;
+}
+
+.menu_item:nth-child(3) {
+  -webkit-transition-delay: 0.45s;
+  transition-delay: 0.45s;
+}
+
+.Menu_item:nth-child(4) {
+  -webkit-transition-delay: 0.55s;
+  transition-delay: 0.55s;
+}
+
+.Menu_item img {
+  width: 200px;
+  height: 120px;
+}
+
+.Menu_item {
+  color: #c4c3c3;
+  font-size: 2rem;
+  padding-bottom: 2.5rem;
 }
 
 .nav {
@@ -151,37 +183,6 @@ a {
   color: #ff652f;
 }
 
-.Menu_item:nth-child(1) {
-  -webkit-transition-delay: 0.25s;
-  transition-delay: 0.25s;
-}
-
-.menu_item:nth-child(2) {
-  -webkit-transition-delay: 0.35s;
-  transition-delay: 0.35s;
-}
-
-.menu_item:nth-child(3) {
-  -webkit-transition-delay: 0.45s;
-  transition-delay: 0.45s;
-}
-
-.Menu_item:nth-child(4) {
-  -webkit-transition-delay: 0.55s;
-  transition-delay: 0.55s;
-}
-
-.Menu_item img {
-  width: 200px;
-  height: 120px;
-}
-
-.Menu_item {
-  color: #c4c3c3;
-  font-size: 2rem;
-  padding-bottom: 2.5rem;
-}
-
 .mobile-view {
   width: 100%;
   height: 10vh;
@@ -210,18 +211,13 @@ body {
   margin-left: 2rem;
   display: block;
   margin-top: 35px;
-  font-weight: light;
-  display: block;
+  float: left;
+  margin-bottom: 30px;
 }
 
 .back h2 {
   margin: 0;
   text-align: center;
-}
-
-.mobile_greet {
-  float: left;
-  margin-bottom: 30px;
 }
 
 .description p {
@@ -267,11 +263,12 @@ body {
 
 @media (max-width: 768px) {
   .bg-on {
-    background: linear-gradient(
-        to right,
-        rgb($back-color, 0.7),
-        rgb($back-color, 0.7)
-      ),
+    background: 
+    linear-gradient(
+            to right,
+            rgb($back-color, 0.7),
+            rgb($back-color, 0.7)
+        ),
       url("/Capstone_module1/pictures/Background.jpeg");
     background-size: cover;
     background-position: center;
@@ -297,17 +294,19 @@ body {
 
   .desktop-view {
     display: block;
+
     .upper-bar {
       background-color: #323338;
       width: 100vw;
       height: 3vh;
       display: inline-flex;
       flex-direction: row-reverse;
+
       div {
         display: flex;
         margin: 3px 10px;
       }
-      
+
       .icons {
         color: #dad7d7;
       }
@@ -320,18 +319,21 @@ body {
         color: #dad7d7;
       }
     }
+
     .lower-bar {
       background-color: white;
       width: 100vw;
       height: 8vh;
       display: inline-flex;
       flex-direction: row;
+
       div {
         display: flex;
       }
 
       .img-lower-bar {
         width: 30%;
+
         img {
           margin: auto;
           width: 95px;
@@ -340,6 +342,7 @@ body {
 
       .hyperlinks {
         width: 70%;
+
         .text {
           margin: auto;
           max-width: 40px;
@@ -351,6 +354,7 @@ body {
 
         .btn-lower-bar {
           margin: auto;
+          
           a {
             border: 3px solid $primary-font-color;
             padding: 15px;
@@ -377,7 +381,7 @@ h1 {
   padding: 0;
   margin-bottom: 10px;
   width: 90%;
-  margin: 2rem;
+  margin-left: 2rem;
   background-color: $back-color;
 }
 
