@@ -279,7 +279,7 @@ body {
   .desktop-view {
     display: block;
     .upper-bar{
-      background-color: #646976;
+      background-color: #323338;
       width: 100vw;
       height: 3vh;
       display: inline-flex;
@@ -289,10 +289,13 @@ body {
         margin: 3px 10px;
       }
       .icons {
-
+        color: #dad7d7;
       }
       .hyperlinks {
-
+        color: #dad7d7;
+      }
+      .text a {
+        color: #dad7d7;
       }
     }
     .lower-bar {
@@ -308,6 +311,7 @@ body {
         width: 30%;
         img {
           margin: auto;
+          width: 95px;
         }
       }
       .hyperlinks {
@@ -316,10 +320,15 @@ body {
           margin: auto;
           max-width: 40px;
         }
+        .text a {
+          color: #646976;
+        }
         .btn-lower-bar {
           margin: auto;
           a {
-            border: 1px solid black;
+            border: 3px solid $primary-font-color;
+            padding: 15px;
+            color: $primary-font-color;
           }
         }
       }

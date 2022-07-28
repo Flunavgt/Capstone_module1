@@ -239,7 +239,7 @@ body {
     display: block;
   }
   .desktop-view .upper-bar {
-    background-color: #646976;
+    background-color: #323338;
     width: 100vw;
     height: 3vh;
     display: inline-flex;
@@ -248,6 +248,15 @@ body {
   .desktop-view .upper-bar div {
     display: flex;
     margin: 3px 10px;
+  }
+  .desktop-view .upper-bar .icons {
+    color: #dad7d7;
+  }
+  .desktop-view .upper-bar .hyperlinks {
+    color: #dad7d7;
+  }
+  .desktop-view .upper-bar .text a {
+    color: #dad7d7;
   }
   .desktop-view .lower-bar {
     background-color: white;
@@ -264,6 +273,7 @@ body {
   }
   .desktop-view .lower-bar .img-lower-bar img {
     margin: auto;
+    width: 95px;
   }
   .desktop-view .lower-bar .hyperlinks {
     width: 70%;
@@ -272,11 +282,16 @@ body {
     margin: auto;
     max-width: 40px;
   }
+  .desktop-view .lower-bar .hyperlinks .text a {
+    color: #646976;
+  }
   .desktop-view .lower-bar .hyperlinks .btn-lower-bar {
     margin: auto;
   }
   .desktop-view .lower-bar .hyperlinks .btn-lower-bar a {
-    border: 1px solid black;
+    border: 3px solid #ec5242;
+    padding: 15px;
+    color: #ec5242;
   }
 }
 h1 {
