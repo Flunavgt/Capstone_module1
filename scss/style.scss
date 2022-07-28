@@ -183,15 +183,11 @@ a {
 }
 
 .mobile-view {
-  position: fixed;
-  z-index: 0;
   width: 100%;
-  padding: 1rem;
   height: 10vh;
 }
 
 .background {
-  padding-top: 100px;
   width: 90vw;
 }
 
@@ -219,11 +215,15 @@ body {
 }
 
 .back h2 {
- 
-  padding: 50px 0 0 0;
   margin: 0;
   text-align: center;
 }
+
+.mobile_greet {
+  float: left;
+  margin-bottom: 30px;
+}
+
 
 .background .about{
   color: $primary-font-color;
@@ -237,7 +237,7 @@ body {
 
 .honeabout {
   margin-right: auto;
-  padding: 0;
+  padding-top: 10px;
   text-align: center;
   margin-left: auto;
   width: 95vw;
@@ -255,8 +255,10 @@ body {
   display: none;
 }
 
+
+
 @media (max-width: 768px) {
-  .mobile-view {
+  .bg-on {
     background: linear-gradient(
         to right,
         rgb($back-color, 0.7),
@@ -269,10 +271,16 @@ body {
   .desktop-view {
     display: none;
   }
+  .mobile_greet {
+    display: block;
+  }
 }
 
 @media (min-width: 769px) {
   .mobile-view {
+    display: none;
+  }
+  .mobile_greet {
     display: none;
   }
 
