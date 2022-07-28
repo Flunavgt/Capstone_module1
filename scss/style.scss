@@ -2,10 +2,6 @@ $back-color: #f5f1f1;
 $primary-font-color: #ec5242;
 $maska: #272727;
 
-@mixin transition-ease {
-  transition: all 0.5s ease-in-out;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -79,6 +75,12 @@ a {
   transform: rotate(-45deg) translate(3px, -7px);
 }
 
+.Menu_item {
+  color: #c4c3c3;
+  font-size: 2rem;
+  padding-bottom: 2.5rem;
+}
+
 .Menu_item:nth-child(1) {
   -webkit-transition-delay: 0.25s;
   transition-delay: 0.25s;
@@ -104,12 +106,6 @@ a {
   height: 120px;
 }
 
-.Menu_item {
-  color: #c4c3c3;
-  font-size: 2rem;
-  padding-bottom: 2.5rem;
-}
-
 .nav {
   position: fixed;
   top: 0;
@@ -125,7 +121,6 @@ a {
 
 .nav .navMenu {
   display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -263,12 +258,13 @@ body {
 
 @media (max-width: 768px) {
   .bg-on {
-    background: 
-    linear-gradient(
-            to right,
-            rgb($back-color, 0.7),
-            rgb($back-color, 0.7)
-        ),
+    background:
+
+            linear-gradient(
+                to right,
+                rgb($back-color, 0.7),
+                rgb($back-color, 0.7)
+            ),
       url("/Capstone_module1/pictures/Background.jpeg");
     background-size: cover;
     background-position: center;
@@ -354,7 +350,7 @@ body {
 
         .btn-lower-bar {
           margin: auto;
-          
+
           a {
             border: 3px solid $primary-font-color;
             padding: 15px;

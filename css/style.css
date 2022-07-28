@@ -65,6 +65,12 @@ a {
   transform: rotate(-45deg) translate(3px, -7px);
 }
 
+.Menu_item {
+  color: #c4c3c3;
+  font-size: 2rem;
+  padding-bottom: 2.5rem;
+}
+
 .Menu_item:nth-child(1) {
   transition-delay: 0.25s;
 }
@@ -84,12 +90,6 @@ a {
 .Menu_item img {
   width: 200px;
   height: 120px;
-}
-
-.Menu_item {
-  color: #c4c3c3;
-  font-size: 2rem;
-  padding-bottom: 2.5rem;
 }
 
 .nav {
