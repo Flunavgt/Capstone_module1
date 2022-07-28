@@ -29,7 +29,7 @@ const arr1 = [
   {
     id: 0,
     spkName: 'Refik Anadol',
-    skpPic: './pictures/Alan-Greenberg.jpeg',
+    skpPic: './pictures/ref.jpeg',
     spkjob: 'Founder and CEO, Illuminarium',
     spkdesk: 'Next Generation Immersive Entertainment',
   },
