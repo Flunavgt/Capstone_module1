@@ -29,7 +29,7 @@ const arr1 = [
   {
     id: 0,
     spkName: 'Refik Anadol',
-    skpPic: './pictures/Refik_anadol.jpeg',
+    skpPic: './pictures/refik_anadol.jpeg',
     spkjob: 'Founder and CEO, Illuminarium',
     spkdesk: 'Next Generation Immersive Entertainment',
   },
