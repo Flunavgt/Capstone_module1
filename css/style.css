@@ -150,7 +150,7 @@ a {
   padding-bottom: 2.5rem;
 }
 
-header {
+.mobile-view {
   position: fixed;
   z-index: 0;
   width: 100%;
@@ -221,12 +221,64 @@ body {
   display: none;
 }
 
-header {
-  background: linear-gradient(to right, rgba(245, 241, 241, 0.7), rgba(245, 241, 241, 0.7)), url("/Capstone_module1/pictures/Background.jpeg");
-  background-size: cover;
-  background-position: center;
+@media (max-width: 768px) {
+  .mobile-view {
+    background: linear-gradient(to right, rgba(245, 241, 241, 0.7), rgba(245, 241, 241, 0.7)), url("/Capstone_module1/pictures/Background.jpeg");
+    background-size: cover;
+    background-position: center;
+  }
+  .desktop-view {
+    display: none;
+  }
 }
-
+@media (min-width: 769px) {
+  .mobile-view {
+    display: none;
+  }
+  .desktop-view {
+    display: block;
+  }
+  .desktop-view .upper-bar {
+    background-color: #646976;
+    width: 100vw;
+    height: 3vh;
+    display: inline-flex;
+    flex-direction: row-reverse;
+  }
+  .desktop-view .upper-bar div {
+    display: flex;
+    margin: 3px 10px;
+  }
+  .desktop-view .lower-bar {
+    background-color: white;
+    width: 100vw;
+    height: 8vh;
+    display: inline-flex;
+    flex-direction: row;
+  }
+  .desktop-view .lower-bar div {
+    display: flex;
+  }
+  .desktop-view .lower-bar .img-lower-bar {
+    width: 30%;
+  }
+  .desktop-view .lower-bar .img-lower-bar img {
+    margin: auto;
+  }
+  .desktop-view .lower-bar .hyperlinks {
+    width: 70%;
+  }
+  .desktop-view .lower-bar .hyperlinks .text {
+    margin: auto;
+    max-width: 40px;
+  }
+  .desktop-view .lower-bar .hyperlinks .btn-lower-bar {
+    margin: auto;
+  }
+  .desktop-view .lower-bar .hyperlinks .btn-lower-bar a {
+    border: 1px solid black;
+  }
+}
 h1 {
   font-family: "COCOGOOSE", sans-serif;
   font-size: 3rem;
