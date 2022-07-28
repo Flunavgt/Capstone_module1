@@ -233,23 +233,29 @@ body {
     background-size: cover;
     background-position: center;
   }
+  
   .desktop-view {
     display: none;
   }
+
   .mobile_greet {
     display: block;
   }
 }
+
 @media (min-width: 769px) {
   .mobile-view {
     display: none;
   }
+
   .mobile_greet {
     display: none;
   }
+
   .desktop-view {
     display: block;
   }
+
   .desktop-view .upper-bar {
     background-color: #323338;
     width: 100vw;
@@ -257,19 +263,24 @@ body {
     display: inline-flex;
     flex-direction: row-reverse;
   }
+
   .desktop-view .upper-bar div {
     display: flex;
     margin: 3px 10px;
   }
+
   .desktop-view .upper-bar .icons {
     color: #dad7d7;
   }
+  
   .desktop-view .upper-bar .hyperlinks {
     color: #dad7d7;
   }
+
   .desktop-view .upper-bar .text a {
     color: #dad7d7;
   }
+
   .desktop-view .lower-bar {
     background-color: white;
     width: 100vw;
@@ -277,35 +288,44 @@ body {
     display: inline-flex;
     flex-direction: row;
   }
+
   .desktop-view .lower-bar div {
     display: flex;
   }
+
   .desktop-view .lower-bar .img-lower-bar {
     width: 30%;
   }
+
   .desktop-view .lower-bar .img-lower-bar img {
     margin: auto;
     width: 95px;
   }
+
   .desktop-view .lower-bar .hyperlinks {
     width: 70%;
   }
+
   .desktop-view .lower-bar .hyperlinks .text {
     margin: auto;
     max-width: 40px;
   }
+
   .desktop-view .lower-bar .hyperlinks .text a {
     color: #646976;
   }
+
   .desktop-view .lower-bar .hyperlinks .btn-lower-bar {
     margin: auto;
   }
+
   .desktop-view .lower-bar .hyperlinks .btn-lower-bar a {
     border: 3px solid #ec5242;
     padding: 15px;
     color: #ec5242;
   }
 }
+
 h1 {
   font-family: "COCOGOOSE", sans-serif;
   font-size: 3rem;
@@ -376,7 +396,7 @@ h1 {
   font-size: 2rem;
   color: #646976;
   -webkit-text-decoration: underline 1px solid #ec5242;
-          text-decoration: underline 1px solid #ec5242;
+  text-decoration: underline 1px solid #ec5242;
   text-underline-offset: 1.5rem;
 }
 
@@ -461,7 +481,7 @@ h1 {
   font-weight: 500;
   font-size: 2rem;
   -webkit-text-decoration: 1px underline #ec5242;
-          text-decoration: 1px underline #ec5242;
+  text-decoration: 1px underline #ec5242;
   text-underline-offset: 1.5rem;
 }
 
@@ -540,7 +560,7 @@ h1 {
   font-weight: 700;
   font-size: 1.5rem;
   -webkit-text-decoration: 1px underline #ec5242;
-          text-decoration: 1px underline #ec5242;
+  text-decoration: 1px underline #ec5242;
   text-underline-offset: 1.2rem;
 }
 
@@ -579,7 +599,7 @@ h1 {
   display: flex;
   justify-content: center;
   -webkit-text-decoration: 1px underline #ec5242;
-          text-decoration: 1px underline #ec5242;
+  text-decoration: 1px underline #ec5242;
   text-underline-offset: 1rem;
 }
 
@@ -674,22 +694,27 @@ h1 {
     font-family: "lato", sans-serif;
     font-size: 2rem;
   }
+
   .fadedPic {
     margin-top: 65px;
     margin-left: 1rem;
   }
+  
   .mobile_greet {
     visibility: hidden;
   }
+
   h1 {
     margin-top: 0;
   }
+
   .activities_container {
     display: flex;
     width: 880px;
     margin-left: auto;
     margin-right: auto;
   }
+
   .activity {
     display: flex;
     flex-direction: column;
@@ -698,19 +723,24 @@ h1 {
     flex-wrap: wrap;
     justify-content: space-around;
   }
+
   .activity:hover {
     border: 1px solid white;
   }
+
   .activity p {
     text-align: center;
     margin: 0;
   }
+
   .hidden-cards {
     display: flex;
   }
+
   .spkMenuBtn {
     visibility: hidden;
   }
+
   .spk_card {
     margin-left: auto;
     margin-right: auto;

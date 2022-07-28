@@ -260,11 +260,11 @@ body {
   .bg-on {
     background:
 
-            linear-gradient(
-                to right,
-                rgb($back-color, 0.7),
-                rgb($back-color, 0.7)
-            ),
+      linear-gradient(
+        to right,
+        rgb($back-color, 0.7),
+        rgb($back-color, 0.7)
+      ),
       url("/Capstone_module1/pictures/Background.jpeg");
     background-size: cover;
     background-position: center;
