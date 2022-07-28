@@ -224,6 +224,11 @@ body {
   margin-bottom: 30px;
 }
 
+.description p {
+  margin: 0 5%;
+  font-size: 1.75rem;
+}
+
 .background .about {
   color: $primary-font-color;
   text-align: center;
@@ -240,6 +245,13 @@ body {
   text-align: center;
   margin-left: auto;
   width: 95vw;
+}
+
+.activity p {
+  color: #f5f1f1;
+  margin-left: 15px;
+  min-width: 160px;
+  font-size: 0.8rem;
 }
 
 .background .about p {
@@ -264,9 +276,11 @@ body {
     background-size: cover;
     background-position: center;
   }
+
   .desktop-view {
     display: none;
   }
+
   .mobile_greet {
     display: block;
   }
@@ -276,6 +290,7 @@ body {
   .mobile-view {
     display: none;
   }
+
   .mobile_greet {
     display: none;
   }
@@ -292,12 +307,15 @@ body {
         display: flex;
         margin: 3px 10px;
       }
+      
       .icons {
         color: #dad7d7;
       }
+
       .hyperlinks {
         color: #dad7d7;
       }
+
       .text a {
         color: #dad7d7;
       }
@@ -311,6 +329,7 @@ body {
       div {
         display: flex;
       }
+
       .img-lower-bar {
         width: 30%;
         img {
@@ -318,15 +337,18 @@ body {
           width: 95px;
         }
       }
+
       .hyperlinks {
         width: 70%;
         .text {
           margin: auto;
           max-width: 40px;
         }
+
         .text a {
           color: #646976;
         }
+
         .btn-lower-bar {
           margin: auto;
           a {
@@ -357,11 +379,6 @@ h1 {
   width: 90%;
   margin: 2rem;
   background-color: $back-color;
-}
-
-.description p {
-  margin: 0 5%;
-  font-size: 1.75rem;
 }
 
 .placeAndDate h2 {
@@ -534,14 +551,6 @@ h1 {
 .activity i:hover {
   color: $primary-font-color;
   cursor: pointer;
-  @include transition-ease;
-}
-
-.activity p {
-  color: #f5f1f1;
-  margin-left: 15px;
-  min-width: 160px;
-  font-size: 0.8rem;
 }
 
 .enroll {
@@ -577,6 +586,7 @@ h1 {
 .partnerTitle {
   background-color: #272a31;
 }
+
 .partnerTitle h2 {
   color: white;
   text-align: center;
@@ -600,7 +610,6 @@ h1 {
   display: flex;
   justify-content: space-evenly;
   flex-direction: row;
-  height: fit-content;
   padding-top: 30px;
 }
 
@@ -647,6 +656,7 @@ h1 {
   font-style: italic;
   font-weight: lighter;
 }
+
 .spk_card img {
   width: 115px;
   height: 115px;
@@ -669,7 +679,7 @@ h1 {
   padding-bottom: 1rem;
 }
 
-.spkjob:after {
+.spkjob::after {
   border-bottom: 1.5px solid rgb(203, 201, 201);
   content: "";
   display: block;
@@ -717,7 +727,6 @@ h1 {
     color: $primary-font-color;
     font-family: "lato", sans-serif;
     font-size: 2rem;
-    font-weight: light;
   }
 
   .fadedPic {
@@ -739,6 +748,7 @@ h1 {
     margin-left: auto;
     margin-right: auto;
   }
+
   .activity {
     display: flex;
     flex-direction: column;
