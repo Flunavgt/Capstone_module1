@@ -233,7 +233,7 @@ body {
     background-size: cover;
     background-position: center;
   }
-  
+
   .desktop-view {
     display: none;
   }
@@ -272,7 +272,7 @@ body {
   .desktop-view .upper-bar .icons {
     color: #dad7d7;
   }
-  
+
   .desktop-view .upper-bar .hyperlinks {
     color: #dad7d7;
   }
@@ -699,7 +699,7 @@ h1 {
     margin-top: 65px;
     margin-left: 1rem;
   }
-  
+
   .mobile_greet {
     visibility: hidden;
   }
